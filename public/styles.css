@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ 
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.topSection{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    font-family:Roboto,sans-serif;
+}
+
+.empty{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.7),rgba(0,0,0,0.9));
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background: rgba( 0, 0, 0, 0.5);
+    position: relative;
+}
+
+.navbar button{
+    background: rgb(233, 131, 131);
+    width: 80px;
+    height: 35px;
+    border: none;
+    color: navy;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+}
+
+.navbar a{
+    font-family: 'Rock Salt', cursive;
+    font-size: 20px;
+    color: olive;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    color: rgb(233, 131, 131);
+    font-family:Roboto,sans-serif;
+    margin-left: 25px;
+}
+
+.navbar .searchBar{
+  
+   width: 45px;
+   height: 45px;
+   background: rgb(233, 131, 131);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.navbar .searchBar i{
+    font-size: 22px;
+    color: white; 
+    font-weight: 10px;  
+}
+
+.navbar ul li{
+    padding: 15px;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar ul li:nth-child(1){
+    position: relative;
+}
+
+
+
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: -10px;
+    background:rgba(124, 76, 76, 0.5);
+}
+
+.topContainer{
+    width: 100%;
+    height: 92vh;
+    background: transparent;
+}
+
+.infoDiv{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    color: white;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+}
+
+.infoDiv h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.infoDiv p{
+    font-size: 18px;
+}
+
+.infoDiv button{
+    width: 150px;
+    height: 37px;
+    background-color: rgb(233, 131, 131);
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    color: white;
+    border:none;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+}
+
+.slider button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+}
+.middleSection{
+    background-image: linear-gradient(rgb(92, 88, 88),black);
+}
+.movies{
+    position: relative;
+    padding: 20px 20px;
+}
+
+.movieList{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 20px;
+    position: relative;
+}
+.movie{
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.movie h3, .movie p{
+    padding-left: 10px;
+    color: rgb(233, 131, 131);
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+
+.movie img{
+    width: 200px;
+    height: 200px;
+   
+}

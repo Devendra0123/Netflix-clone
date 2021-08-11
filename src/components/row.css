@@ -1,0 +1,28 @@
+.row{
+    padding: 20px;
+    color: white;
+   
+}
+
+.row::-webkit-scrollbar{
+    display: hidden;
+}
+
+.row_posters{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.row_posters img{
+    object-fit: contain;
+    height: 250px;
+    margin-left: 10px;
+   
+    transition: all 0.4s;
+}
+
+.row_posters img:hover{
+    transform: scale(1.09);
+
+}
